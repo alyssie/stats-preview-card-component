@@ -71,6 +71,8 @@ a:hover {
 
 #my-component .left .content .title span {
   color: #aa5cdb;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 #my-component .left .content .desc {
