@@ -57,7 +57,7 @@ a{
         background: $blue;
         overflow: hidden;
         .content{
-            padding: 70PX;
+            padding: 70PX 70px 45px 70px;
             letter-spacing: 2px;
             height: 100%;
             display: grid;
@@ -94,8 +94,7 @@ a{
                 font-family: 'Inter', sans-serif;
                 color: $white2;
                 text-transform: uppercase;
-                font-size: 0.825rem;
-                margin-bottom: 5px;
+                font-size: 0.75rem;
             }
         }
     }
