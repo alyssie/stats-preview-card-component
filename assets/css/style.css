@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #090b1a;
+}
+
+.relative {
+  position: relative;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
+#my-component .container {
+  padding: 0 35px;
+}
+
+#my-component .card {
+  height: auto;
+  align-self: center;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+}
+
+#my-component .left {
+  padding: 0 0 0 15px;
+  background: #1b1938;
+  overflow: hidden;
+}
+
+#my-component .left .content {
+  padding: 70PX;
+  letter-spacing: 2px;
+  height: 100%;
+  display: grid;
+}
+
+#my-component .left .content .statistics {
+  display: flex;
+  align-self: end;
+  justify-content: space-between;
+}
+
+#my-component .left .content .title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.15rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  letter-spacing: 1;
+}
+
+#my-component .left .content .title span {
+  color: #aa5cdb;
+}
+
+#my-component .left .content .desc {
+  color: #ffffff99;
+  font-size: 0.825rem;
+  line-height: 2;
+}
+
+#my-component .left .content .number {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+#my-component .left .content .sub {
+  font-family: 'Inter', sans-serif;
+  color: #ffffffbf;
+  text-transform: uppercase;
+  font-size: 0.825rem;
+  margin-bottom: 5px;
+}
+
+#my-component .right {
+  padding: 0;
+}
+
+#my-component .right .content {
+  height: 446px;
+  background-image: url("../img/image-header-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #aa5cdb;
+  background-blend-mode: overlay;
+  filter: brightness(0.7);
+}
+
+@media only screen and (max-width: 1199.98px) {
+  #my-component .left .content {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  #my-component {
+    padding: 100px 25px;
+  }
+  #my-component .h-100 {
+    height: auto !important;
+  }
+  #my-component .left {
+    padding: 0 15px 0 15px;
+  }
+  #my-component .left .content {
+    padding: 15px 35px;
+  }
+  #my-component .left .content .statistics {
+    display: block;
+  }
+  #my-component .left .content .statistics .stat {
+    margin: 35px 0;
+  }
+  #my-component .left .content .title {
+    text-align: center;
+    margin-top: 40px;
+  }
+  #my-component .left .content .desc {
+    text-align: center;
+  }
+  #my-component .left .content .number {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #my-component .left .content .sub {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

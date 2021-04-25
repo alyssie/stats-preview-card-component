@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+//font-family: 'Lexend Deca', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+//font-family: 'Inter', sans-serif;
+
+$white: #ffffff;
+$white2: #ffffffbf;
+$white3: #ffffff99;
+$cyan-light: #9be3e2;
+$violet: #aa5cdb;
+$blue: #1b1938;
+$dark-blue: #090b1a;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: $dark-blue;
+}
+
+.relative{
+    position: relative;
+}
+
+p{
+    font-size: 1.125rem;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.h-100{
+    height: 100vh !important;
+}
+
+#my-component{
+    .container{
+        padding: 0 35px;
+    }
+    .card{
+        height: auto;
+        align-self: center;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        border-radius: 10px;
+        background: transparent;
+    }
+    .left{
+        padding: 0 0 0 15px;
+        background: $blue;
+        overflow: hidden;
+        .content{
+            padding: 70PX;
+            letter-spacing: 2px;
+            height: 100%;
+            display: grid;
+            .statistics{
+                display: flex;
+                align-self: end;
+                justify-content: space-between;
+            }
+            .title{
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 2.15rem;
+                color: $white;
+                margin-bottom: 25px;
+                line-height: 1.3;
+                letter-spacing: 1;
+                span{
+                    color: $violet;
+                }
+            }
+            .desc{
+                color: $white3;
+                font-size: 0.825rem;
+                line-height: 2;
+            }
+            .number{
+                font-family: 'Inter', sans-serif;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: 5px;
+            }
+            .sub{
+                font-family: 'Inter', sans-serif;
+                color: $white2;
+                text-transform: uppercase;
+                font-size: 0.825rem;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .right{
+        padding: 0;
+        .content{
+            height: 446px;
+            background-image: url('../img/image-header-desktop.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: $violet;
+            background-blend-mode: overlay;
+            filter: brightness(0.7);
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    #my-component{
+        .left{
+            .content{
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    #my-component{
+        padding: 100px 25px;
+        .h-100{
+            height: auto !important;
+        }
+        .left{
+            padding: 0 15px 0 15px;
+            .content{
+                padding: 15px 35px;
+                .statistics{
+                    display: block;
+                    .stat{
+                        margin: 35px 0;
+                    }
+                }
+                .title{
+                    text-align: center;
+                    margin-top: 40px;
+                }
+                .desc{
+                    text-align: center;
+                }
+                .number{
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                .sub{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
